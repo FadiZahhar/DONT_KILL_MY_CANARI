@@ -585,6 +585,13 @@ body.outlook p {
 
 @media only screen and (max-width: 820px) {
 
+  table#big {
+    display:block!important;
+  }
+  table#small {
+    display:none!important;
+  }
+
   table[class="body"] img {
     width: auto !important;
     height: auto !important;
@@ -759,7 +766,12 @@ body.outlook p {
     }
 
     @media only screen and (max-width: 600px) {
-
+table#big {
+  display:none!important;
+}
+table#small {
+  display:block!important;
+}
       table[class="body"] .right-text-pad {
       /*  padding-left: 10px !important; */
       }
@@ -788,10 +800,32 @@ html, body {
                     <tr>
                       <td class="wrapper last">
 
-                        <table class="twelve columns"  cellpadding="0" cellspacing="0">
+                        <table id="big" class="twelve columns"  cellpadding="0" cellspacing="0">
                           <tr>
                             <td class="twelve sub-columns">
-                              <img style="margin-top:-3px" src="http://pro-freelancer.github.io/DONT_KILL_MY_CANARI/images/DONT_KILL_MY_CANARI.png">
+                              <img id="usemap" src="http://pro-freelancer.github.io/DONT_KILL_MY_CANARI/images/DONT_KILL_MY_CANARI.png" usemap="#Map" style="margin-top:-3px">
+                              <map  name="Map" id="Map">
+                                <area shape="rect" coords="247,811,652,868" href="https://soundcloud.com/toni-haupt" target="_blank" alt="" />
+                                <area shape="rect" coords="247,1093,711,1137" href="https://soundcloud.com/jackthefish" target="_blank" alt="" />
+                                <area shape="rect" coords="246,1139,545,1179" href="https://soundcloud.com/escapetovenus" target="_blank" alt="" />
+                                <area shape="rect" coords="246,1207,431,1242" href="https://presella.com/dont_kill_my_canari_toni_haupt/" target="_blank" alt="" />
+                              </map>
+                            </td>
+                          </tr>
+
+                        </table>
+
+
+                        <table id="samll" class="twelve columns"  cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td class="twelve sub-columns">
+                              <img  src="http://pro-freelancer.github.io/DONT_KILL_MY_CANARI/images/1.png"  />
+                              <a href="https://soundcloud.com/toni-haupt" target="_blank"><img  src="http://pro-freelancer.github.io/DONT_KILL_MY_CANARI/images/2.png"  /></a>
+                              <img  src="http://pro-freelancer.github.io/DONT_KILL_MY_CANARI/images/3.png"  />
+                              <a href="https://soundcloud.com/jackthefish" target="_blank"><img  src="http://pro-freelancer.github.io/DONT_KILL_MY_CANARI/images/4.png"  /></a>
+                              <a href="https://soundcloud.com/escapetovenus" target="_blank"><img  src="http://pro-freelancer.github.io/DONT_KILL_MY_CANARI/images/5.png"  /></a>
+                              <a href="https://presella.com/dont_kill_my_canari_toni_haupt/" target="_blank"><img  src="http://pro-freelancer.github.io/DONT_KILL_MY_CANARI/images/6.png"  /></a>
+
                             </td>
                           </tr>
 
